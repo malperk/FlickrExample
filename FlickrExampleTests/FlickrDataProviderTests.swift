@@ -38,7 +38,7 @@ class FlickrDataProviderTests: XCTestCase {
             XCTAssertNil(response.error)
             expectation.fulfill()
         }
-        waitForExpectations(timeout: 25, handler: nil)
+        waitForExpectations(timeout: 5, handler: nil)
     }
     func testBadRequestCode() {
         let expectation = self.expectation(description: "testSuccessfulRequest")
